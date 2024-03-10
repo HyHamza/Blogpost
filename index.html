@@ -1,46 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TalkDrove -- Blogs</title>
-</head>
+// Check PHP Version
+$phpVersion = PHP_VERSION;
 
-<body>
-    <main>
-        <header>
-            <nav>
-                <ol>
-                    <li><a href="#"><img width="20px" src="files/imgs/nav/home.png" alt="Home Icon"></a></li>
-                    <li><a href="#"><img width="20px" src="files/imgs/nav/bookmark.png" alt="Home Icon"></a></li>
-                    <li><a href="#"><img width="20px" src="files/imgs/nav/contact.png" alt="Home Icon"></a></li>
-                </ol>
-            </nav>
-        </header>
-        <div class="main">
-            <h1>Hi, dear! Welcome to my website</h1>
-            
-            <p class="p-text">Click on the Button to see the post</p>
-            <!-- <p class="hover-text">Hover here</p> -->
-<a class="post-link" href="files/pages/post_1.html">Post</a>
-          </div>
-        <section class="bottom">
-            <a href="#">More posts</a>
-            <a href="#">Contact here</a>
-            <a href="#">Follow</a>
-            <a href="#">FeedBack</a>
-        </section>
-        <hr>
-    </main>
-    <!-- <div class="aside">
-        <aside>This is aside </aside>
-    </div> -->
-    <div class="footer">
-    <footer> &copy; Hamza all copy rights reversed</footer>
-    <hr>
-</div>
-</body>
+echo "Current PHP Version: $phpVersion";
 
-</html>
+// Compare PHP Version
+$requiredVersion = "7.3.0";
+
+if (version_compare($phpVersion, $requiredVersion, '<')) {
+    echo "\nYour PHP version is outdated. Please upgrade to at least PHP $requiredVersion.";
+} else {
+    echo "\nYour PHP version meets the minimum requirements.";
+}
+
+?>
