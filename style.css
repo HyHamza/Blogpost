@@ -1,0 +1,7 @@
+ol{
+    display: flex;
+}
+li{
+    margin: auto;
+    list-style:none;
+}
