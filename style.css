@@ -5,3 +5,7 @@ li{
     margin: auto;
     list-style:none;
 }
+body{
+    background-image: url(imgs/bg_5.avif);
+    background-size: cover;
+}
