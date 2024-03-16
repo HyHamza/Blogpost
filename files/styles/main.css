@@ -18,10 +18,10 @@ body {
 
 nav {
     /* margin-bottom: 100px; */
-    position: fixed;
+    /* position: fixed; */
     /* top: 10px; */
     border-radius: 20px;
-    width: auto;
+    width: 50rem;
     min-width: 60%;
     height: auto;
 
@@ -36,7 +36,7 @@ nav {
 nav:hover {
     width: auto;
     min-width: 60%;
-    position: fixed;
+    /* position: fixed; */
     height: auto;
     max-height: fit-content;
     /* height: 100px; */
@@ -191,5 +191,5 @@ body:hover .post-link {
 
 .p-text {
     position: absolute;
-    top: 222px;
+    top: 280px;
 }
